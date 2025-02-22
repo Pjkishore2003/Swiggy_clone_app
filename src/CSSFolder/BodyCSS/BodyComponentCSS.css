@@ -1,0 +1,226 @@
+/* Main Container */
+.Body-container {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Search Container */
+.search-container {
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  width: 95%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Mindlist Section */
+.mindlist-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.mindlist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Adjusted for better spacing */
+  padding: 20px;
+  width: 90%;
+}
+
+.mindlist-item {
+  width: 120px; /* Increased size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mindlist-image {
+  width: 100px; /* Increased size */
+  height: 100px; /* Increased size */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mindlist-image:hover {
+  transform: scale(1.1);
+}
+
+.mindlist-text {
+  margin-top: 12px; /* Adjusted spacing */
+  font-size: 16px; /* Slightly larger font */
+  font-weight: 500;
+  color: #333;
+}
+
+/* Restaurant List */
+.Restaurant-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Res-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mindlist-container {
+    gap: 20px;
+  }
+
+  .mindlist-item {
+    width: 100px;
+  }
+
+  .mindlist-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mindlist-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mindlist-container {
+    gap: 10px;
+  }
+
+  .mindlist-item {
+    width: 80px;
+  }
+
+  .mindlist-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mindlist-text {
+    font-size: 12px;
+  }
+}
+
+
+.mindlist-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to a new line */
+  justify-content: center;
+  gap: 30px; /* Adjust the gap as needed */
+  padding: 20px;
+  width: 90%;
+  overflow-x: auto; /* Add horizontal scrolling */
+}
+
+.mindlist-item {
+  width: 150px; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mindlist-image {
+  width: 120px; /* Adjust the width as needed */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mindlist-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  width: 90%;
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+}
+
+
+.mindlist-item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7; /* Set background color to grey */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mindlist-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #f7f7f7; /* Set background color to grey */
+}
+
+
+.mindlist-header {
+  
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  text-align: left; /* Align text to the left */
+}
+
+.mindlist-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 24px;
+  text-align: left !important; /* Add !important to override any other styles */
+  margin-left: 20px; /* Add a left margin to move the heading away from the center */
+}
+
+.mindlist-text {
+  display: none; /* Hide the text overlay */
+}
+
+
+/* Remove link styling */
+.restaurant-card-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the color from its parent container */
+}
+
+.restaurant-card-link:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}

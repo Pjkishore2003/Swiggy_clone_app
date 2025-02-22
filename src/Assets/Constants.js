@@ -1,0 +1,1 @@
+export const link = "https://food-delivery-cors.vercel.app/";
